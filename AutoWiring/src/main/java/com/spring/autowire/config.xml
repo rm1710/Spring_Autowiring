@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org.schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+        xmlns:context="http://www.springframework.org/schema/context">
+        
+    	<bean name="address" class="com.spring.autowire.Address">
+    		<property name="city" value="pune"/>
+    		<property name="state" value="maharashtra"/>
+    	</bean>
+    	
+    	<bean name="st" class="com.spring.autowire.Student" autowire="byType"></bean>
+	
+		<bean name="st" class="com.spring.autowire.Student" autowire="constructor"></bean>
+</beans>
