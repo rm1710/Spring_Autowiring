@@ -5,17 +5,17 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-//@Component("employee")
-//@Scope("prototype")
+@Component("employee")
+@Scope("prototype")
 public class Emp {
 
-//	@Value("1")
+	@Value("1")
 	private int id;
 
-//	@Value("Springrm")
+	@Value("Springrm")
 	private String name;
 
-//	@Value("#{ad}")
+	@Value("#{ad}")
 	private List<String> address;
 
 	public int getId() {

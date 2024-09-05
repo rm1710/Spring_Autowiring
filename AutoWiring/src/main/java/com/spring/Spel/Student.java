@@ -3,7 +3,7 @@ package com.spring.Spel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.*;
 
-@Component
+@Component("employee")
 public class Student {
 	@Value("#{2+3}")
 	public int sum;
